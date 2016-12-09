@@ -1,60 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Ilya Manin</title>
-  </head>
-  <body>
-    <h1>Ilya Manin</h1>
-    <h2>Software Engineer</h2>
-    <p>Experienced in development backend software on Ruby, mostly using Ruby on Rails also familiar with Sinatra and Hanami. As software engineer I've got experience with Ansible, Docker, AWS (Amazon Web Services) especially Route53, EC2, ELB, S3, RDS. Also I have experience working remotely in team, managing projects and design system architecture.</p>
-    <h3>Skills</h3>
-    <ul>
-      <li>Ruby, Ruby on Rails</li>
-      <li>Git, GitFlow</li>
-      <li>SQL, PostgreSQL</li>
-      <li>Redis</li>
-      <li>Solr, ElasticSearch</li>
-      <li>AWS, Ansible, Docker</li>
-      <li>Nginx</li>
-      <li>Linux, Debian, Ubuntu</li>
-      <li>TDD, OOP, SOLID, KISS</li>
-      <li>Web Development, Agile, Scrum, MVC</li>
-      <li>vim</li>
-      <li>HTML, HAML, YAML, XML</li>
-      <li>CSS, SASS, SCSS</li>
-      <li>JavaScript, CoffeeScript</li>
-    </ul>
-    <h3>Experience</h3>
-    <ul>
-      <li>Lead ruby developer, Hexlet, August 2015 – Present, Tomsk Region, Russian Federation</li>
-      <li>Lead ruby developer, Tomsk State University of Control Systems and Radioelectronics, January 2010 – August 2015 (5 years 8 months), Tomsk Region, Russian Federation</li>
-      <li>Web-developer, OOO "NPP Progress", October 2009 – January 2010 (4 months), Tomsk Region, Russian Federation</li>
-      <li>Web-developer, Freelance, September 2008 - July 2009 (11 months), Tomsk Region, Russian Federation</li>
-    </ul>
-    <h3>Languages</h3>
-    <ul>
-      <li>Russian (native)</li>
-      <li>English</li>
-    </ul>
-    <h3>Education</h3>
-    <p>Tomsk State University of Control Systems and Radioelectronics — Engineer’s Degree, Computer Software Engineering, 2003 — 2008</p>
-    <h3>Hobbie</h3>
-    <ul>
-      <li>archery</li>
-      <li>reading</li>
-      <li>motorcycle</li>
-      <li>snowboarding</li>
-    </ul>
-		<h3>Contacts</h3>
-		<ul>
-			<li><a href="mailto:bkmzvf@gmail.com">bkmzvf@gmail.com</a></li>
-			<li><a href="https://telegram.me/xamut">telegram.me/xamut</a></li>
-			<li><a href="https://linkedin.com/in/xamut">linkedin.com/in/xamut</a></li>
-			<li><a href="https://github.com/xamut">github.com/xamut</a></li>
-		</ul>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41229744 = new Ya.Metrika({ id:41229744, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41229744" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
