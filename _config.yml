@@ -6,7 +6,7 @@
 title: Ilya Manin
 email: bkmzvf@gmail.com
 description: "software engineer"
-#url: https://xamut.github.io
+url: https://xamut.github.io
 include: [_pages]
 
 #
@@ -34,11 +34,10 @@ kramdown:
 #
 owner:
   name: Ilya Manin
-  gravatar_url: http://gravatar.com/avatar/df690ae5543371ec4cb3af5bcf5018b2?s=200
+  gravatar_url: https://gravatar.com/avatar/df690ae5543371ec4cb3af5bcf5018b2?s=200
   job: "software engineer"
   bio:
   email: bkmzvf@gmail.com
-  disqus-shortname:
   twitter: xamut
   facebook: ilya.a.manin
   google:
@@ -47,24 +46,10 @@ owner:
     verify:
     ad-client:
     ad-slot:
-  bing-verify:
   github: xamut
   gitlab: xamut
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: xamut
   skype: xamut_
   telegram: xamut
-  xing: #username
   instagram: xamut
   lastfm: xamut
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
