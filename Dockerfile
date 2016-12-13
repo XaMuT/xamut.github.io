@@ -12,9 +12,10 @@ RUN mkdir $APP_PATH
 WORKDIR $APP_PATH
 
 COPY Gemfile .
+COPY Gemfile.lock .
 
 RUN bundle
 
 EXPOSE 4000
 
-CMD /bin/bash
+CMD bundle exec jekyll serve

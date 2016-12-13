@@ -1,14 +1,70 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Ilya Manin
+email: bkmzvf@gmail.com
+description: "software engineer"
+#url: https://xamut.github.io
+include: [_pages]
 
-# Build settings
-markdown: kramdown
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Novosibirsk
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: false
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Ilya Manin
+  gravatar_url: http://gravatar.com/avatar/df690ae5543371ec4cb3af5bcf5018b2?s=200
+  job: "software engineer"
+  bio:
+  email: bkmzvf@gmail.com
+  disqus-shortname:
+  twitter: xamut
+  facebook: ilya.a.manin
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: xamut
+  gitlab: xamut
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: xamut
+  skype: xamut_
+  telegram: xamut
+  xing: #username
+  instagram: xamut
+  lastfm: xamut
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
