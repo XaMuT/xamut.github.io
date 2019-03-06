@@ -27,12 +27,19 @@ Experienced in development backend software on Ruby, mostly using Ruby on Rails 
 
 ### Experience
 
-* Software Developer, FunBox, December 2016 –  Present, Moscow, Russian Federation
+* Software Developer, Travelport Locomote, July 2017 - Present, Melbourne, Australia
+  * Corporate travel platform
+
+  *Remote teamwork, refactoring of legacy code, test coverage, developing services, code reviewing*
+
+  * Buzzwords: JavaScript, CoffeeScript, TypeScript, ES6, Spine.js, Express.js, PostgreSQL, Jira, SOLID, TDD, jade, codecov, mocha
+
+* Software Developer, FunBox, December 2016 –  July 2017, Moscow, Russian Federation
   * Information systems for mobile operators
 
   *Remote teamwork, refactoring of legacy code, test coverage, developing services, code reviewing, REST API*
 
-  Buzzwords: Ruby, Rails, AngularJS, Redis, PostgreSQL, Jira, SOLID, service object, form object, TDD, codecov, slim, sidekiq, capistrano, codecov, rubocop, RSpec
+  Buzzwords: Ruby, Rails, AngularJS, Redis, PostgreSQL, Jira, SOLID, service object, form object, TDD, slim, sidekiq, capistrano, codecov, rubocop, RSpec
 
 * Lead ruby developer, Hexlet, August 2015 – December 2016 (1 year 5 months), Ulyanovsk Region, Russian Federation
   * International real estate information system
