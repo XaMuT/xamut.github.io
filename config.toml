@@ -1,0 +1,24 @@
+PygmentsCodeFences = true
+PygmentsStyle = "perldoc"
+baseURL = "https://xamut.github.io/"
+disableHugoGeneratorInject = true
+disableKinds = ["sitemap", "taxonomyTerm"]
+languageCode = "en-us"
+pluralizelisttitles = false
+title = "Ilya Manin"
+
+[params]
+  gravatarUrl = "https://gravatar.com/avatar/df690ae5543371ec4cb3af5bcf5018b2?s=200"
+
+[[params.contacts]]
+  title = "✉️ xamut.codes@gmail.com"
+  url = "mailto:xamut.codes@gmail.com?subject=Hey, I come from your site"
+[[params.contacts]]
+  title = "💬 telegram.me/xamut"
+  url = "https://telegram.me/xamut"
+[[params.contacts]]
+  title = "💻 github.com/xamut"
+  url = "https://github.com/xamut"
+[[params.contacts]]
+  title = "👋 linkedin.com/in/xamut"
+  url = "https://www.linkedin.com/in/xamut"

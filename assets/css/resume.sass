@@ -1,0 +1,67 @@
+$base_font_size: 12px
+$secondary_color: grey
+$margin: 15px
+
+.resume
+  font-size: $base_font_size
+  overflow: hidden
+
+  h3
+    font-size: $base_font_size + 8px
+    margin: $margin 0 $margin - 5px
+
+  p
+    margin: 0
+
+  ul
+    li
+      list-style: none
+
+  .sidebar
+    float: left
+    padding: 0 15px 0 0
+    width: 175px
+
+  .summary_and_experience
+    overflow: hidden
+
+  .fullname
+    font-size: $base_font_size + 12px
+    line-height: $base_font_size + 21px
+    margin: 0
+
+  .speciality
+    font-size: $base_font_size + 4px
+    font-style: italic
+    margin: 0
+
+  .summary
+    p
+      text-align: justify
+
+  .experience
+    .job
+      margin: 0 0 $margin 0
+
+      .post
+        font-size: $base_font_size + 4px
+
+      .info
+        color: $secondary_color
+
+        p
+          .period
+            float: right
+            font-style: italic
+            padding: 0 1px 0 0
+
+      .responsibilities
+        p
+          text-align: justify
+          //margin: $margin 0 0
+
+      .keywords
+        color: $secondary_color
+
+        p
+          font-style: italic

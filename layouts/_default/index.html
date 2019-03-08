@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <div class="greeting">
+    <img class="avatar" src="{{ .Site.Params.GravatarUrl }}" alt="avatar">
+    <h1>Hi there! I'm Ilya Manin, a software engineer.</h1>
+    <ul class="contacts">
+      {{ range .Site.Params.Contacts }}
+        <li>
+          <a href="{{ .url }}">{{ .title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+    <ul class="blog_links">
+      {{ range where .Site.RegularPages "Section" "blog" }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

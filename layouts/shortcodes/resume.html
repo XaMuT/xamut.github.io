@@ -1,0 +1,78 @@
+{{ $resumeJSON := $.Page.Site.Data.resume }}
+<div class="resume">
+  <div class="sidebar">
+    <h1 class="fullname">{{ $resumeJSON.firstname }} <br> {{ $resumeJSON.surname }}</h1>
+    <h2 class="speciality">{{ $resumeJSON.speciality }}</h2>
+    <div class="contacts">
+      <h3>Personal Info</h3>
+      <div class="address">{{ $resumeJSON.address }}</div>
+      <ul>
+        {{ range .Site.Params.Contacts }}
+          <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        {{ range $resumeJSON.skills }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="education">
+      <h3>Education</h3>
+      {{ range sort $resumeJSON.education "id" }}
+        <div class="school">
+          <h4 class="degree">{{ .degree }}</h4>
+          <div class="info">
+            <p>
+              <span class="period">{{ .period.from }} &mdash; {{ .period.to | default "Present" }}</span>
+              <span class="title">{{ .school }}, {{ .location }}</span>
+            </p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="languages">
+      <h3>Languages</h3>
+      <ul>
+        {{ range $resumeJSON.languages }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        {{ range $resumeJSON.hobbies }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <div class="summary_and_experience">
+    <div class="summary"><p>{{ $resumeJSON.summary }}</p></div>
+    <div class="experience">
+      <h3>Experience</h3>
+      {{ range sort $.Page.Site.Data.resume.experience "id" "desc" }}
+        <div class="job">
+          <h4 class="post">{{ .post }}</h4>
+          <div class="info">
+            <p>
+              <span class="period">{{ .period.from }} &mdash; {{ .period.to | default "Present" }}</span>
+              <span class="company">{{ .company }}, {{ .location }} &mdash; {{ cond (.remote) "Remote" "Office" }}</span>
+            </p>
+          </div>
+          <div class="responsibilities">
+            <p>{{ .responsibilities }}</p>
+          </div>
+          <div class="keywords">
+            <p>{{ delimit .keywords ", " }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

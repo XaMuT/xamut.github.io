@@ -1,0 +1,255 @@
+{
+    "address": "Tomsk, Russian Federation",
+    "summary": "Experienced in backend software development, on Ruby (Ruby on Rails) since 2010, on JavaScript (NodeJS) since 2016. Working remotely since 2015. As a software engineer I have experience in developing API and services. Also have some experience in devops, I have worked with Ansible, Docker, AWS. Interested in solve problems, especially in an elegant way. Like to learn something new and useful. I'm in love with VIM.",
+    "contacts": [
+        {
+            "title": "bkmzvf@gmail.com",
+            "url": "mailto:bkmzvf@gmail.com?subject=Hey, it's about your resume"
+        },
+        {
+            "title": "telegram.me/xamut",
+            "url": "https://telegram.me/xamut"
+        },
+        {
+            "title": "github.com/xamut",
+            "url": "https://github.com/xamut"
+        },
+        {
+            "title": "linkedin.com/in/xamut",
+            "url": "https://www.linkedin.com/in/xamut"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Engineer\u2019s Degree of Software Engineering",
+            "id": 1,
+            "location": "Tomsk, Russian Federation",
+            "period": {
+                "from": 2003,
+                "to": 2008
+            },
+            "school": "Tomsk State University of Control Systems and Radioelectronics"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Travelport Locomote",
+            "id": 10,
+            "keywords": [
+                "JavaScript",
+                "NodeJS",
+                "CoffeeScript",
+                "TypeScript",
+                "ES6",
+                "Spine.js",
+                "Express.js",
+                "PostgreSQL",
+                "Jenkins",
+                "Jira",
+                "redis",
+                "SOLID",
+                "TDD",
+                "jade",
+                "codecov",
+                "mocha"
+            ],
+            "location": "Melbourne, Australia",
+            "period": {
+                "from": "July 2017"
+            },
+            "post": "Software Developer",
+            "remote": true,
+            "responsibilities": "Corporate travel platform. Remote teamwork, refactoring of legacy code, test coverage, developing booking services, code reviewing, integrating with external booking services"
+        },
+        {
+            "company": "FunBox",
+            "id": 9,
+            "keywords": [
+                "Ruby",
+                "Rails",
+                "AngularJS",
+                "Redis",
+                "PostgreSQL",
+                "Jira",
+                "SOLID",
+                "service object",
+                "form object",
+                "TDD",
+                "slim",
+                "sidekiq",
+                "capistrano",
+                "codecov",
+                "rubocop",
+                "RSpec"
+            ],
+            "location": "Moscow, Russian Federation",
+            "period": {
+                "from": "December 2016",
+                "to": "July 2017"
+            },
+            "post": "Software Developer",
+            "remote": true,
+            "responsibilities": "Information systems for mobile operators. Remote teamwork, refactoring of legacy code, test coverage, developing services, code reviewing, REST API"
+        },
+        {
+            "company": "Hexlet",
+            "id": 8,
+            "keywords": [
+                "Ruby",
+                "Rails",
+                "Redis",
+                "PostgreSQL",
+                "ElasticSearch",
+                "AWS (EC2, ELB, Route53, RDS, S3)",
+                "Ansible",
+                "Docker",
+                "Jira",
+                "SCRUM",
+                "Agile",
+                "gitflow",
+                "nginx",
+                "SOLID",
+                "service object",
+                "form object",
+                "TDD",
+                "codecov",
+                "dry-rb",
+                "rom-rb",
+                "json-api",
+                "haml",
+                "pundit",
+                "sidekiq",
+                "capistrano",
+                "codecov",
+                "rubocop",
+                "minitest"
+            ],
+            "location": "Ulyanovsk, Russian Federation",
+            "period": {
+                "from": "August 2015",
+                "to": "December 2016"
+            },
+            "post": "Lead ruby developer",
+            "remote": true,
+            "responsibilities": "International real estate information system. Several similar sites of construction companies. Remote teamwork, technical support, refactoring of legacy code, test coverage, setup CI, error tracking, SSL (let`s encrypt), code coverage, export and import data, development of authentication system, configure sending e-mail and SMS, setup ElasticSearch instance, architecture design and business processes, development CMS and CRM, API for mobile applications, code review, configure production \u0438 development environment with Ansible and AWS/Vagrant."
+        },
+        {
+            "company": "Tomsk State University of Control Systems and Radioelectronics",
+            "id": 7,
+            "keywords": [],
+            "location": "Tomsk, Russian Federation",
+            "period": {
+                "from": "January 2010",
+                "to": "August 2015"
+            },
+            "post": "Lead ruby developer",
+            "remote": false,
+            "responsibilities": "Ruby, Rails (March 2010 \u2014 August 2015)\n* AIS \u00abStroitel\u00bb\n* AIS \u0441linical supervision and monitoring of children's diseases Tomsk region\n  * group project education (gpo.tusur.ru)\n  * scientific and educational portal (edu.tusur.ru)\n  * electronic training schedule (timetable.tusur.ru)\n  * distributed content management system for the needs of the Tomsk Region Administration (AAA system, phone directory, news system, search and indexing system, CMS client application) (old.tomsk.gov.ru)\n* AAA(Authentication, Authorization, Accounting) system of TUSUR (profile.tusur.ru)\n  * Information and entertainment portal ZnaiGorod (znaigorod.ru)\n  * AIS student attendance journal (attendance.tusur.ru)\n  * phone directory (directory.tusur.ru)\n  * SAAS electronic training schedule (fliptable.ru)\n  * personal student/employee account\n  * monitoring students' progress\n  * AIS rank of professors and lecturers\n  * AIS rank in hostel\n  * generation of work programs\n  * notification system (email/sms)\n  * site for abiturients and information system for ONIR  (abiturient.tusur.ru)\n\nHTML coding, upgrade Ruby on Rails (2 \u2014> 3.0 \u2014> 3.2 \u2014> 4), parsing, import and export XLS, XML, DOC, CSV, HTML, PDF documents, technical support, configure searching/indexing (Solr/Sunspot), authentication and authorization, development API and interaction over API, construction and optimization of business processes, cache configuration, architecture design and business processes, building an object model of system and mechanism of interaction with other applications, optimization of computational processes, planning and team management.\n\n  #### Python, Django (January 2010 \u2014 March 2010)\n\n  * information system of support XII Tomsk Innovation Forum 2010\n  * official site of Tomsk Region Governor Viktor Kress\n  * foreign version of official TUSUR site\nHTML coding, developing comments system and news/articles."
+        },
+        {
+            "company": "OOO \"NPP Progress\"",
+            "id": 6,
+            "keywords": [
+                "HTML",
+                "CSS",
+                "Python",
+                "Django"
+            ],
+            "location": "Tomsk, Russian Federation",
+            "period": {
+                "from": "October 2009",
+                "to": "January 2010"
+            },
+            "post": "Web-developer",
+            "remote": false,
+            "responsibilities": "HTML coding. Converting PSD to HTML. Developing on Python/Django."
+        },
+        {
+            "company": "OOO \"SMP-95\"",
+            "id": 5,
+            "keywords": [],
+            "location": "Tomsk, Russian Federation",
+            "period": {
+                "from": "July 2009",
+                "to": "September 2009"
+            },
+            "post": "Forwarder",
+            "remote": false,
+            "responsibilities": "Making reporting documentation. Purchase of consumables for the needs of production. Supporting of cargoes."
+        },
+        {
+            "company": "Various customers",
+            "id": 4,
+            "keywords": [],
+            "location": "Tomsk, Russian Federation",
+            "period": {
+                "from": "September 2008",
+                "to": "July 2009"
+            },
+            "post": "Freelancer",
+            "remote": true,
+            "responsibilities": "Setup Joomla and Drupal on VPS. HTML coding. Develop simple php-pages."
+        },
+        {
+            "company": "OOO \"RM-SibProm\"",
+            "id": 3,
+            "keywords": [],
+            "location": "Tomsk, Russian Federation",
+            "period": {
+                "from": "December 2007",
+                "to": "December 2008"
+            },
+            "post": "Sales Manager, System Administrator",
+            "remote": false,
+            "responsibilities": "Direct sales of raw materials. The organization works on the shipment and clearance of accompanying documents. Reception of raw materials to the warehouse and registration acceptance documentation. Keeping the enterprise IT-infrastructure (telephony, LAN organization, support of 1C: Predpriyatie)."
+        },
+        {
+            "company": "AK SBRF (OAO) (Sberbank of Russia) GOSB \u21167387 of Prokopyevsk",
+            "id": 2,
+            "keywords": [],
+            "location": "Prokopyevsk, Russian Federation",
+            "period": {
+                "from": "July 2007",
+                "to": "August 2007"
+            },
+            "post": "Engineer of sectors of economic and information security and data protection",
+            "remote": false,
+            "responsibilities": "Part-time work for a summer vacation. Document processing and entering data into the information system."
+        },
+        {
+            "company": "AK SBRF (OAO) (Sberbank of Russia) GOSB \u21167387 of Prokopyevsk",
+            "id": 1,
+            "keywords": [],
+            "location": "Prokopyevsk, Russian Federation",
+            "period": {
+                "from": "July 2004",
+                "to": "August 2004"
+            },
+            "post": "Leading accountant",
+            "remote": false,
+            "responsibilities": "Part-time work for a summer vacation. Document processing and entering data into the information system."
+        }
+    ],
+    "firstname": "Ilya",
+    "hobbies": [
+        "\ud83c\udff9 archery",
+        "\ud83c\udfb8 guitar",
+        "\ud83c\udfcd motorcycles",
+        "\ud83d\udcda reading",
+        "\ud83c\udfc2 snowboarding"
+    ],
+    "languages": [
+        "English",
+        "Russian (native)"
+    ],
+    "skills": [
+        "Ruby, Ruby on Rails",
+        "JavaScript, NodeJS, TypeScript",
+        "SQL, PostgreSQL, Redis",
+        "Solr, ElasticSearch",
+        "Ansible, Docker, AWS",
+        "Linux, Debian, Ubuntu, MacOS"
+    ],
+    "speciality": "Software Engineer",
+    "surname": "Manin"
+}
