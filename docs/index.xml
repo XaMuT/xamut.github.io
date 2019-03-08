@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ilya Manin</title>
+    <link>https://xamut.github.io/</link>
+    <description>Recent content on Ilya Manin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Dec 2016 14:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://xamut.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring Memory Usage From Ruby Process</title>
+      <link>https://xamut.github.io/blog/monitoring-memory-usage-from-ruby-process/</link>
+      <pubDate>Sun, 04 Dec 2016 14:00:00 +0700</pubDate>
+      
+      <guid>https://xamut.github.io/blog/monitoring-memory-usage-from-ruby-process/</guid>
+      <description>Just put this in your code. You may use logger instead of puts.
+Thread.new do while true pid = Process.pid rss = `ps -eo pid,rss | grep #{pid}| awk &amp;#39;{print $2}&amp;#39;`.to_i puts &amp;#34;MEMORY[#{pid}]: rss: #{rss}, live objects #{GC.stat[:heap_live_slots]}&amp;#34; sleep 5 end end</description>
+    </item>
+    
+    <item>
+      <title>Import Existing Vbox in Vagrant</title>
+      <link>https://xamut.github.io/blog/import-existing-vbox-in-vagrant/</link>
+      <pubDate>Sat, 03 Dec 2016 18:00:00 +0700</pubDate>
+      
+      <guid>https://xamut.github.io/blog/import-existing-vbox-in-vagrant/</guid>
+      <description># Add vbox to VirtualBox (Machine -&amp;gt; Add) # Then create a directories for Vagrant in the your project: cd project_directory mkdir -p .vagrant/machines/default/virtualbox VBoxManage list vms # copy a hash in curly braces of your vbox, ex. “bdff668b-af18-4dad-ac58-9d9c1865d9d7” echo -n &amp;#34;COPIED_HASH&amp;#34; &amp;gt; .vagrant/machines/default/virtualbox/id # run VirtualBox and start your vbox, log in there with username: vagrant, password: vagrant cd ~ curl https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub &amp;gt;&amp;gt; .ssh/authorized_keys # After that you must logout from vbox and quit VirtualBox vagrant reload</description>
+    </item>
+    
+  </channel>
+</rss>

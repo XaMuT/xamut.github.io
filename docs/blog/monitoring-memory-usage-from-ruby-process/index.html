@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ilya Manin</title>
+    
+    <link rel="stylesheet" href="https://xamut.github.io/css/main.min.4bde8400bea39caba4ca8423835b285fb3d8d88f5ea1d4b9f45f61b7af9b3663.css">
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="https://xamut.github.io/">Home</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="content">
+      
+  
+  <h1>Monitoring Memory Usage From Ruby Process</h1>
+  
+
+  <p>Just put this in your code. You may use logger instead of puts.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#00688b">Thread</span>.new <span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#8b008b;font-weight:bold">true</span>
+    pid = <span style="color:#00688b">Process</span>.pid
+    rss = <span style="color:#cd5555">`ps -eo pid,rss | grep </span><span style="color:#cd5555">#{</span>pid<span style="color:#cd5555">}</span><span style="color:#cd5555"> | awk &#39;{print $2}&#39;`</span>.to_i
+    <span style="color:#658b00">puts</span> <span style="color:#cd5555">&#34;MEMORY[</span><span style="color:#cd5555">#{</span>pid<span style="color:#cd5555">}</span><span style="color:#cd5555">]: rss: </span><span style="color:#cd5555">#{</span>rss<span style="color:#cd5555">}</span><span style="color:#cd5555">, live objects </span><span style="color:#cd5555">#{</span><span style="color:#00688b">GC</span>.stat[<span style="color:#cd5555">:heap_live_slots</span>]<span style="color:#cd5555">}</span><span style="color:#cd5555">&#34;</span>
+    <span style="color:#658b00">sleep</span> <span style="color:#b452cd">5</span>
+  <span style="color:#8b008b;font-weight:bold">end</span>
+<span style="color:#8b008b;font-weight:bold">end</span></code></pre></div>
+
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2019 Ilya Manin</p>
+    </div>
+  </body>
+</html>

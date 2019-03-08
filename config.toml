@@ -5,6 +5,7 @@ disableHugoGeneratorInject = true
 disableKinds = ["sitemap", "taxonomyTerm"]
 languageCode = "en-us"
 pluralizelisttitles = false
+publishDir = "docs"
 title = "Ilya Manin"
 
 [params]

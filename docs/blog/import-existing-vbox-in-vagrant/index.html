@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ilya Manin</title>
+    
+    <link rel="stylesheet" href="https://xamut.github.io/css/main.min.4bde8400bea39caba4ca8423835b285fb3d8d88f5ea1d4b9f45f61b7af9b3663.css">
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="https://xamut.github.io/">Home</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="content">
+      
+  
+  <h1>Import Existing Vbox in Vagrant</h1>
+  
+
+  <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># Add vbox to VirtualBox (Machine -&gt; Add)</span>
+
+<span style="color:#228b22"># Then create a directories for Vagrant in the your project:</span>
+<span style="color:#658b00">cd</span> project_directory
+mkdir -p .vagrant/machines/default/virtualbox
+VBoxManage list vms
+
+<span style="color:#228b22"># copy a hash in curly braces of your vbox, ex. “bdff668b-af18-4dad-ac58-9d9c1865d9d7”</span>
+<span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;COPIED_HASH&#34;</span> &gt; .vagrant/machines/default/virtualbox/id
+
+<span style="color:#228b22"># run VirtualBox and start your vbox, log in there with username: vagrant, password: vagrant</span>
+<span style="color:#658b00">cd</span> ~
+curl https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub &gt;&gt; .ssh/authorized_keys
+
+<span style="color:#228b22"># After that you must logout from vbox and quit VirtualBox</span>
+vagrant reload</code></pre></div>
+
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2019 Ilya Manin</p>
+    </div>
+  </body>
+</html>
