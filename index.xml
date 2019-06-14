@@ -6,10 +6,20 @@
     <description>Recent content on Ilya Manin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2019 22:33:28 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 14:00:15 +0700</lastBuildDate>
     
 	<atom:link href="https://xamut.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bind the Control key to the Caps Lock in macOS</title>
+      <link>https://xamut.github.io/blog/bind-control-key-to-caps-lock-in-mac-os/</link>
+      <pubDate>Fri, 14 Jun 2019 14:00:15 +0700</pubDate>
+      
+      <guid>https://xamut.github.io/blog/bind-control-key-to-caps-lock-in-mac-os/</guid>
+      <description>Do you ever use the Caps Lock key? I bet you ignore this nice button and don&amp;rsquo;t use it at all, unless you write on COBOL or FORTRAN.
+This button is located on one of the most used keyboard lines and your little finger is almost always above this place. But you never press it. Fortunately we can change the action of this button and you are able to bind the action that you often use in your daily routine.</description>
+    </item>
     
     <item>
       <title>Resume</title>

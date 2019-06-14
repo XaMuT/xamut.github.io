@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Ilya Manin</title>
     
-    <link rel="stylesheet" href="https://xamut.github.io/css/main.min.13e42e6c42822f7261d62c340d8e8ebad5a02f8a2a1080693d311d74eb8e939f.css">
-     <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(41229744, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41229744" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    <link rel="stylesheet" href="https://xamut.github.io/css/main.min.354d9d183ed944e9582ddc6981b4ed9e29b142a6fbe0f89c24666e64239ae4c4.css">
+    
+     <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym( 41229744 , "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41229744" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    
   </head>
   <body>
     <div class="header">
@@ -27,21 +29,21 @@
   <h1>Import Existing Vbox in Vagrant</h1>
   
 
-  <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># Add vbox to VirtualBox (Machine -&gt; Add)</span>
+  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Add vbox to VirtualBox (Machine -&gt; Add)</span>
 
-<span style="color:#228b22"># Then create a directories for Vagrant in the your project:</span>
-<span style="color:#658b00">cd</span> project_directory
+<span style="color:#75715e"># Then create a directories for Vagrant in the your project:</span>
+cd project_directory
 mkdir -p .vagrant/machines/default/virtualbox
 VBoxManage list vms
 
-<span style="color:#228b22"># copy a hash in curly braces of your vbox, ex. “bdff668b-af18-4dad-ac58-9d9c1865d9d7”</span>
-<span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;COPIED_HASH&#34;</span> &gt; .vagrant/machines/default/virtualbox/id
+<span style="color:#75715e"># copy a hash in curly braces of your vbox, ex. “bdff668b-af18-4dad-ac58-9d9c1865d9d7”</span>
+echo -n <span style="color:#e6db74">&#34;COPIED_HASH&#34;</span> &gt; .vagrant/machines/default/virtualbox/id
 
-<span style="color:#228b22"># run VirtualBox and start your vbox, log in there with username: vagrant, password: vagrant</span>
-<span style="color:#658b00">cd</span> ~
+<span style="color:#75715e"># run VirtualBox and start your vbox, log in there with username: vagrant, password: vagrant</span>
+cd ~
 curl https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub &gt;&gt; .ssh/authorized_keys
 
-<span style="color:#228b22"># After that you must logout from vbox and quit VirtualBox</span>
+<span style="color:#75715e"># After that you must logout from vbox and quit VirtualBox</span>
 vagrant reload</code></pre></div>
 
     </div>

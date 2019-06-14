@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Ilya Manin</title>
     
-    <link rel="stylesheet" href="https://xamut.github.io/css/main.min.13e42e6c42822f7261d62c340d8e8ebad5a02f8a2a1080693d311d74eb8e939f.css">
-     <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(41229744, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41229744" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    <link rel="stylesheet" href="https://xamut.github.io/css/main.min.354d9d183ed944e9582ddc6981b4ed9e29b142a6fbe0f89c24666e64239ae4c4.css">
+    
+     <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym( 41229744 , "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41229744" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    
   </head>
   <body>
     <div class="header">
@@ -28,14 +30,14 @@
   
 
   <p>Just put this in your code. You may use logger instead of puts.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#00688b">Thread</span>.new <span style="color:#8b008b;font-weight:bold">do</span>
-  <span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#8b008b;font-weight:bold">true</span>
-    pid = <span style="color:#00688b">Process</span>.pid
-    rss = <span style="color:#cd5555">`ps -eo pid,rss | grep </span><span style="color:#cd5555">#{</span>pid<span style="color:#cd5555">}</span><span style="color:#cd5555"> | awk &#39;{print $2}&#39;`</span>.to_i
-    <span style="color:#658b00">puts</span> <span style="color:#cd5555">&#34;MEMORY[</span><span style="color:#cd5555">#{</span>pid<span style="color:#cd5555">}</span><span style="color:#cd5555">]: rss: </span><span style="color:#cd5555">#{</span>rss<span style="color:#cd5555">}</span><span style="color:#cd5555">, live objects </span><span style="color:#cd5555">#{</span><span style="color:#00688b">GC</span>.stat[<span style="color:#cd5555">:heap_live_slots</span>]<span style="color:#cd5555">}</span><span style="color:#cd5555">&#34;</span>
-    <span style="color:#658b00">sleep</span> <span style="color:#b452cd">5</span>
-  <span style="color:#8b008b;font-weight:bold">end</span>
-<span style="color:#8b008b;font-weight:bold">end</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Thread</span><span style="color:#f92672">.</span>new <span style="color:#66d9ef">do</span>
+  <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">true</span>
+    pid <span style="color:#f92672">=</span> <span style="color:#66d9ef">Process</span><span style="color:#f92672">.</span>pid
+    rss <span style="color:#f92672">=</span> <span style="color:#e6db74">`ps -eo pid,rss | grep </span><span style="color:#e6db74">#{</span>pid<span style="color:#e6db74">}</span><span style="color:#e6db74"> | awk &#39;{print $2}&#39;`</span><span style="color:#f92672">.</span>to_i
+    puts <span style="color:#e6db74">&#34;MEMORY[</span><span style="color:#e6db74">#{</span>pid<span style="color:#e6db74">}</span><span style="color:#e6db74">]: rss: </span><span style="color:#e6db74">#{</span>rss<span style="color:#e6db74">}</span><span style="color:#e6db74">, live objects </span><span style="color:#e6db74">#{</span><span style="color:#66d9ef">GC</span><span style="color:#f92672">.</span>stat<span style="color:#f92672">[</span><span style="color:#e6db74">:heap_live_slots</span><span style="color:#f92672">]</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    sleep <span style="color:#ae81ff">5</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span></code></pre></div>
 
     </div>
 
