@@ -6,10 +6,19 @@
     <description>Recent content on Ilya Manin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jun 2019 14:00:15 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 16:42:28 +0700</lastBuildDate>
     
 	<atom:link href="https://xamut.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Projects</title>
+      <link>https://xamut.github.io/projects/</link>
+      <pubDate>Fri, 18 Oct 2019 16:42:28 +0700</pubDate>
+      
+      <guid>https://xamut.github.io/projects/</guid>
+      <description> telegraphist &amp;mdash; Telegram Bot API on Go tmux-network-bandwidth &amp;mdash; Network bandwidth plugin for tmux tmux-weather &amp;mdash; Weather plugin for tmux  </description>
+    </item>
     
     <item>
       <title>Bind the Control key to the Caps Lock in macOS</title>
