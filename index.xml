@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ilya Manin</title>
@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>Bind the Control key to the Caps Lock in macOS</title>
-      <link>https://xamut.github.io/blog/bind-control-key-to-caps-lock-in-mac-os/</link>
+      <title>Bind the Caps Lock to the Control key in macOS</title>
+      <link>https://xamut.github.io/blog/bind-caps-lock-to-control-key-in-mac-os/</link>
       <pubDate>Fri, 14 Jun 2019 14:00:15 +0700</pubDate>
       
-      <guid>https://xamut.github.io/blog/bind-control-key-to-caps-lock-in-mac-os/</guid>
+      <guid>https://xamut.github.io/blog/bind-caps-lock-to-control-key-in-mac-os/</guid>
       <description>Do you ever use the Caps Lock key? I bet you ignore this nice button and don&amp;rsquo;t use it at all, unless you write on COBOL or FORTRAN.
 This button is located on one of the most used keyboard lines and your little finger is almost always above this place. But you never press it. Fortunately we can change the action of this button and you are able to bind the action that you often use in your daily routine.</description>
     </item>
