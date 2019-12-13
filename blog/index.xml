@@ -17,7 +17,7 @@
       <pubDate>Fri, 14 Jun 2019 14:00:15 +0700</pubDate>
       
       <guid>https://xamut.github.io/blog/bind-caps-lock-to-control-key-in-mac-os/</guid>
-      <description>Do you ever use the Caps Lock key? I bet you ignore this nice button and don&amp;rsquo;t use it at all, unless you write on COBOL or FORTRAN.
+      <description>Do you ever use the Caps Lock key? I bet you ignore this nice button and don&#39;t use it at all, unless you write on COBOL or FORTRAN.
 This button is located on one of the most used keyboard lines and your little finger is almost always above this place. But you never press it. Fortunately we can change the action of this button and you are able to bind the action that you often use in your daily routine.</description>
     </item>
     
@@ -28,7 +28,7 @@ This button is located on one of the most used keyboard lines and your little fi
       
       <guid>https://xamut.github.io/blog/monitoring-memory-usage-from-ruby-process/</guid>
       <description>Just put this in your code. You may use logger instead of puts.
-Thread.new do while true pid = Process.pid rss = `ps -eo pid,rss | grep #{pid}| awk &amp;#39;{print $2}&amp;#39;`.to_i puts &amp;#34;MEMORY[#{pid}]: rss: #{rss}, live objects #{GC.stat[:heap_live_slots]}&amp;#34; sleep 5 end end</description>
+Thread.new do while true pid = Process.pid rss = `ps -eo pid,rss | grep #{pid}| awk &amp;#39;{print $2}&amp;#39;`.to_i puts &amp;#34;MEMORY[#{pid}]: rss: #{rss}, live objects #{GC.stat[:heap_live_slots]}&amp;#34; sleep 5 end end </description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@ Thread.new do while true pid = Process.pid rss = `ps -eo pid,rss | grep #{pid}| 
       <pubDate>Sat, 03 Dec 2016 18:00:00 +0700</pubDate>
       
       <guid>https://xamut.github.io/blog/import-existing-vbox-in-vagrant/</guid>
-      <description># Add vbox to VirtualBox (Machine -&amp;gt; Add) # Then create a directories for Vagrant in the your project: cd project_directory mkdir -p .vagrant/machines/default/virtualbox VBoxManage list vms # copy a hash in curly braces of your vbox, ex. “bdff668b-af18-4dad-ac58-9d9c1865d9d7” echo -n &amp;#34;COPIED_HASH&amp;#34; &amp;gt; .vagrant/machines/default/virtualbox/id # run VirtualBox and start your vbox, log in there with username: vagrant, password: vagrant cd ~ curl https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub &amp;gt;&amp;gt; .ssh/authorized_keys # After that you must logout from vbox and quit VirtualBox vagrant reload</description>
+      <description># Add vbox to VirtualBox (Machine -&amp;gt; Add) # Then create a directories for Vagrant in the your project: cd project_directory mkdir -p .vagrant/machines/default/virtualbox VBoxManage list vms # copy a hash in curly braces of your vbox, ex. “bdff668b-af18-4dad-ac58-9d9c1865d9d7” echo -n &amp;#34;COPIED_HASH&amp;#34; &amp;gt; .vagrant/machines/default/virtualbox/id # run VirtualBox and start your vbox, log in there with username: vagrant, password: vagrant cd ~ curl https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub &amp;gt;&amp;gt; .ssh/authorized_keys # After that you must logout from vbox and quit VirtualBox vagrant reload </description>
     </item>
     
   </channel>
